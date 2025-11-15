@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps{
-                sh 'echo "build completed."'
+                sh '''
+		echo "build completed."
+		echo "this build was triggered automatically"
+		'''
             }
         }
     }
